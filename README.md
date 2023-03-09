@@ -1,6 +1,6 @@
 # Beacon - Get home safe
 
-Beacon is an app which provides a way on how to get home safe by tracking location and take actions if there are complications.
+Beacon is an app which provides a way on how to get home safe by tracking a users location and take actions if there are complications on the way without the user having to do anything.
 
 ## Idea
 
