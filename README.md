@@ -2,6 +2,10 @@
 
 Beacon is an app which provides a way on how to get home safe by tracking a users location and take actions if there are complications on the way without the user having to do anything.
 
+# Beacon - Get home safe
+
+Beacon is an app which provides a way on how to get home safe by tracking a users location and take actions if there are complications on the way without the user having to do anything.
+
 ## Idea
 
 Beacon is an app helping people to get home safe. It is a location based app which tracks the location of the user and takes action in case of danger.
@@ -16,7 +20,7 @@ It would work as follows:
 
 4. If the user gets home safe, he can stop the tracking and the app will ask the user to send notifications to it emergency contacts that he got home safe. This can be accepted or declined.
 
-The goal of this whole process is to help people to get home safe and feel safe while traveling alone. The app also wants to have the user make as little as possible effort to detect if the user is in danger. Needing to type in any form of "hello im in danger please help me my current location is ..." or just clicking a button is not the way to go. The app should be able to detect if the user is in danger and take action without the user having to do anything.
+The goal of this whole process is to help people to get home safe and feel safe while traveling alone. The app also wants to have the user make as little as possible effort to detect if the user is in danger. Needing to type in any form of "hello im in danger please help me my current location is ..." or just clicking a button should not be the way to go. The app should be able to detect if the user is in danger and take action without the user having to do anything.
 
 ## Features
 
@@ -37,3 +41,27 @@ The user can simulate a phone call with **Lily**. Talking everything to make oth
 
 The app will be available to mobile phones as a standalone build app. It will be developed using React Native and Expo for the frontend.
 Amazon Web Services will be used for the backend. Using serverless functions could be a problem because of the need of a constant connection to the internet. Therefore, probably a normal server will be used.
+For managing the infrastructure as code, terraform will be used.
+
+The following list of links will be useful to start the development:
+
+- [React Native](https://reactnative.dev)
+- [React Native with Typescript](https://reactnative.dev/docs/typescript)
+- [Expo](https://expo.io)
+- [Amazon Web Services](https://aws.amazon.com)
+- [Google Maps API](https://developers.google.com/maps/documentation)
+- [Amplify](https://aws.amazon.com/amplify)
+- [Authentication](https://docs.amplify.aws/ui/auth/authenticator/q/framework/react-native/)
+- [User Information Storage](https://aws.amazon.com/blogs/mobile/build-a-user-settings-store-with-aws-appsync/)
+- [Object Storage](https://aws.amazon.com/s3/)
+- [React Native Websocket](https://blog.logrocket.com/how-to-implement-websockets-in-react-native/)
+- [AWS Websocket](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api.html)
+- [AWS Serverless Websocket](https://aws.amazon.com/blogs/compute/building-serverless-multi-region-websocket-apis/)
+- [AWS Notifications](https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-phone-number-as-subscriber.html)
+- [AWS Cloud Development Kit](https://aws.amazon.com/cdk/)
+- [AWS Command Line Interface](https://aws.amazon.com/cli/)
+- [Terraform](https://www.terraform.io)
+
+Node modules which could be useful:
+
+- [Remotion](https://github.com/remotion-dev/remotion)
