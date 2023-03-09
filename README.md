@@ -65,3 +65,7 @@ The following list of links will be useful to start the development:
 Node modules which could be useful:
 
 - [Remotion](https://github.com/remotion-dev/remotion)
+
+## Other
+
+Calling hte app beacon because the user should image a beacon which is sending out a signal to help the user to get home safe. Having a light beacon at night as a symbol for the app could be a good idea.
