@@ -1,1 +1,22 @@
-<mxfile host="app.diagrams.net" modified="2023-03-09T19:40:40.788Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15" version="20.8.23" etag="_CzLIspbY1ZcV5Hnx8ca" type="github"><diagram name="Page-1" id="IoCi2CeMeCGcYG_DuMq9">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-03-10T19:32:21.024Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Safari/605.1.15" etag="sr6u5qyUHl4SrfPZrno3" version="20.8.23" type="github">
+  <diagram name="Page-1" id="IoCi2CeMeCGcYG_DuMq9">
+    <mxGraphModel dx="1593" dy="922" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4bekn-3Uq1Szt67pV5bS-10" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="40" y="260" width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="4bekn-3Uq1Szt67pV5bS-4" value="Client" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://cdn-icons-png.flaticon.com/512/7344/7344131.png;" vertex="1" parent="4bekn-3Uq1Szt67pV5bS-10">
+          <mxGeometry width="210" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="4bekn-3Uq1Szt67pV5bS-8" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://global-uploads.webflow.com/5e740d74e6787687577e9b38/63978bf83d789b4602145daf_maximizing-efficiency-and-productivity-with-expo-dev-tools-2.png;" vertex="1" parent="4bekn-3Uq1Szt67pV5bS-10">
+          <mxGeometry x="70.77777777777779" y="108.88888888888889" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4bekn-3Uq1Szt67pV5bS-9" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://www.datocms-assets.com/45470/1631026680-logo-react-native.png;" vertex="1" parent="4bekn-3Uq1Szt67pV5bS-10">
+          <mxGeometry x="51.38" y="38.88888888888889" width="108.79555555555555" height="71.55555555555556" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
