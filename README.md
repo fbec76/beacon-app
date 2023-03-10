@@ -36,7 +36,7 @@ The user can simulate a phone call with **Lily**. Talking everything to make oth
 ## Technology stack
 
 The app will be available to mobile phones as a standalone build app. It will be developed using React Native and Expo for the frontend.
-Amazon Web Services will be used for the backend. Using serverless functions could be a problem because of the need of a constant connection to the internet. Therefore, probably a normal server will be used.
+Amazon Web Services will be used for the backend. Using serverless functions could be a problem because of the need of a constant connection to the internet. Therefore, probably a normal server will be used. The use of serverless websocket could also be an option.
 For managing the infrastructure as code, terraform will be used.
 
 The following list of links will be useful to start the development:
@@ -57,10 +57,6 @@ The following list of links will be useful to start the development:
 - [AWS Cloud Development Kit](https://aws.amazon.com/cdk/)
 - [AWS Command Line Interface](https://aws.amazon.com/cli/)
 - [Terraform](https://www.terraform.io)
-
-Node modules which could be useful:
-
-- [Remotion](https://github.com/remotion-dev/remotion)
 
 ## Design
 
