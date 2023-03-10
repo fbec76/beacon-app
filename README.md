@@ -2,10 +2,6 @@
 
 Beacon is an app which provides a way on how to get home safe by tracking a users location and take actions if there are complications on the way without the user having to do anything.
 
-# Beacon - Get home safe
-
-Beacon is an app which provides a way on how to get home safe by tracking a users location and take actions if there are complications on the way without the user having to do anything.
-
 ## Idea
 
 Beacon is an app helping people to get home safe. It is a location based app which tracks the location of the user and takes action in case of danger.
@@ -66,6 +62,10 @@ Node modules which could be useful:
 
 - [Remotion](https://github.com/remotion-dev/remotion)
 
-## Other
+## Design
 
 Calling hte app beacon because the user should image a beacon which is sending out a signal to help the user to get home safe. Having a light beacon at night as a symbol for the app could be a good idea.
+
+## Other
+
+This project is part of a Bachelor Thesis for the FOM Fachhochschule für Oekonomie & Management in Münster, Germany.
