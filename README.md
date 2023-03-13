@@ -12,17 +12,17 @@ It would work as follows:
 
 2. The user sets it travel mode (e.g. walking, cycling, driving, public transport, etc.) With the help of google maps, the app calculates suggested ways and the estimated time of arrival. The user then is able to select the way he wants to use (like in the google maps app).
 
-3. From now on the app tracks and analyzes the users way. If the user suddenly stops (for longer than usual) or uses a direction which does not seem to be the right one, the app will notify the user ans asks if everything is okay. If the user does not answer, the app will send a notification to previously selected contacts (e.g. family, friends, etc.) with the current location of the user and its healthcare information (e.g. allergies, blood type, etc.). The app also is able to call the emergency services (e.g. 112/110) and send the current location of the user.
+3. From now on the app tracks and analyzes the users way. If the user suddenly stops (for longer than usual) or uses a direction which does not seem to be the right one, the app notifies the user and asks if everything is okay. If the user does not answer, the app sends a notification to previously selected contacts (e.g. family, friends, etc.) with the current location of the user and its healthcare information (e.g. allergies, blood type, etc.). The app also is able to call the emergency services (e.g. 112/110) and send the current location of the user.
 
-4. If the user gets home safe, he can stop the tracking and the app will ask the user to send notifications to it emergency contacts that he got home safe. This can be accepted or declined.
+4. If the user gets home safe, he can stop the tracking and the app asks the user to send notifications to it emergency contacts that he got home safe. This can be accepted or declined.
 
 The goal of this whole process is to help people to get home safe and feel safe while traveling alone. The app also wants to have the user make as little as possible effort to detect if the user is in danger. Needing to type in any form of "hello im in danger please help me my current location is ..." or just clicking a button should not be the way to go. The app should be able to detect if the user is in danger and take action without the user having to do anything.
 
 ## Main Features
 
-The app uses an approach in which its not a "neutral app" but to be personal. The users should not feel being tracked rather than being attended by a friend. This virtual friend (assistant) will be called **Lily**. (a **trip sitter** lol)
+The app uses an approach in which its not a "neutral app" but to be personal. The users should not feel being tracked rather than being attended by a friend. This virtual friend (assistant) is called **Lily**. (a **trip sitter** lol)
 
-The app will be able to:
+The app is be able to:
 
 - Track the location of the user
 - Detect if the user is in danger (AI use?)
@@ -32,15 +32,15 @@ The app will be able to:
 
 ### Track the location of the user
 
-The app will be able to track the users location if the user allows it. The location tracking will run in the background, even if the mobile phone is locked. The location will only be tracked during a trip.
+The app is be able to track the users location if the user allows it. The location tracking runs in the background, even if the mobile phone is locked. The location is tracked only during a trip.
 
 ### Detect if the user is in danger
 
-By looking at the path, the user is traveling, an algorithm should determine if the user is currently in danger. A Danger detection could check for disagreements during the trip. This involves analyzing the way, the user is taking, and determining does the route make sense. Or if the users position does not change for a specific duration (this will be able to set by the user individually). The user is able mark situation as "emergency case" which marks the current situation as danger. Other methods could also be used.
+By looking at the path, the user is traveling, an algorithm should determine if the user is currently in danger. A Danger detection could check for disagreements during the trip. This involves analyzing the way, the user is taking, and determining does the route make sense. Or if the users position does not change for a specific duration (set by the user individually). The user is able mark situation as "emergency case" which marks the current situation as danger. Other methods could also be used.
 
 ### In case of danger
 
-In case of danger, the app is able to take action to inform others about the dangerous situation. This includes, sharing the current location and personal health information to emergency contacts (managed by the user). The app also is able to notify other app users which are in the same area as the user. These will only be able to see the users current location (or health information too if the users allows the app to share it as well). In addition to that, local emergency services will be notified - primarily the police to which also current location and health information will be shared.
+In case of danger, the app is able to take action to inform others about the dangerous situation. This includes, sharing the current location and personal health information to emergency contacts (managed by the user). The app also is able to notify other app users which are in the same area as the user. These only see the users current location (or health information too if the users allows the app to share it as well). In addition to that, local emergency services will be notified - primarily the police to which also current location and health information will be shared.
 
 ### Arriving
 
@@ -54,7 +54,7 @@ The user has the ability to manage his/her personal information. This includes s
 
 ### Guidelines
 
-The app will offer a list of posts on how to avoid dangerous situations. This will also include a safety guide in which tactics for defending oneself.
+The app offers a list of posts on how to avoid dangerous situations. This also includes a safety guide in which tactics for defending oneself.
 
 ### Optional features
 
@@ -62,9 +62,9 @@ The user can simulate a phone call with **Lily**. Talking everything to make oth
 
 ## Technology stack
 
-The app will be available to mobile phones as a standalone build app. It will be developed using React Native and Expo for the frontend.
-Amazon Web Services will be used for the backend. Using serverless functions could be a problem because of the need of a constant connection to the internet. Therefore, probably a normal server will be used. The use of serverless websocket could also be an option.
-For managing the infrastructure as code, terraform will be used.
+The app is be available to mobile phones as a standalone build app. It is being developed using React Native and Expo for the frontend.
+Amazon Web Services is being used for the backend. Using serverless functions could be a problem because of the need of a constant connection to the internet. Therefore, probably a normal server will be used. The use of serverless websocket could also be an option.
+For managing the infrastructure as code, terraform is being used.
 
 The following list of links will be useful to start the development:
 
