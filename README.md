@@ -18,20 +18,47 @@ It would work as follows:
 
 The goal of this whole process is to help people to get home safe and feel safe while traveling alone. The app also wants to have the user make as little as possible effort to detect if the user is in danger. Needing to type in any form of "hello im in danger please help me my current location is ..." or just clicking a button should not be the way to go. The app should be able to detect if the user is in danger and take action without the user having to do anything.
 
-## Features
+## Main Features
 
-The app uses an approach in which its not a "neutral app" but to be personal. The users should not feel being tracked rather than being attended by a friend. This virtual friend (assistant) will be called **Lily**.
+The app uses an approach in which its not a "neutral app" but to be personal. The users should not feel being tracked rather than being attended by a friend. This virtual friend (assistant) will be called **Lily**. (a **trip sitter** lol)
 
 The app will be able to:
 
 - Track the location of the user
-- Detect if the user is in danger (possibly using AI)
-- Notify emergency contacts (e.g. family, friends, etc.)
+- Detect if the user is in danger (AI use?)
+- Notify emergency contacts (e.g. family, friends, etc.) including sharing live location
 - Call emergency services (e.g. 112/110)
+- Share location with surrounding app users
+
+### Track the location of the user
+
+The app will be able to track the users location if the user allows it. The location tracking will run in the background, even if the mobile phone is locked. The location will only be tracked during a trip.
+
+### Detect if the user is in danger
+
+By looking at the path, the user is traveling, an algorithm should determine if the user is currently in danger. A Danger detection could check for disagreements during the trip. This involves analyzing the way, the user is taking, and determining does the route make sense. Or if the users position does not change for a specific duration (this will be able to set by the user individually). The user is able mark situation as "emergency case" which marks the current situation as danger. Other methods could also be used.
+
+### In case of danger
+
+In case of danger, the app is able to take action to inform others about the dangerous situation. This includes, sharing the current location and personal health information to emergency contacts (managed by the user). The app also is able to notify other app users which are in the same area as the user. These will only be able to see the users current location (or health information too if the users allows the app to share it as well). In addition to that, local emergency services will be notified - primarily the police to which also current location and health information will be shared.
+
+### Arriving
+
+When the user arrives at his/her destination, he/she can mark the trip as "arrived safe". Optionally the user can share a message with his/her emergency contact containing the message that it arrived safely.
+
+### User information management
+
+The user has the ability to store up to 5 constant locations which can be access per one click to take a trip to.<br>
+The user can store up to 5 emergency contacts to which personal information will be shared in case of danger.<br>
+The user has the ability to manage his/her personal information. This includes surname, email, phone and password. <br>
+
+### Guidelines
+
+The app will offer a list of posts on how to avoid dangerous situations. This will also include a safety guide in which tactics for defending oneself.
 
 ### Optional features
 
-The user can simulate a phone call with **Lily**. Talking everything to make others look like the user is having a real conversation. This can be used to make the user feel more safe.
+The user can simulate a phone call with **Lily**. Talking everything to make others look like the user is having a real conversation. This can be used to make the user feel more safe. This will possibly be done, by having an AI model talk to the user via text-to-speech software.
 
 ## Technology stack
 
