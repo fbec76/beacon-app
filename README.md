@@ -2,6 +2,24 @@
 
 Beacon is an app which provides a way on how to get home safe by tracking a users location and take actions if there are complications on the way without the user having to do anything.
 
+<!-- TOC -->
+
+- [Beacon - Get home safe](#beacon---get-home-safe)
+  - [Idea](#idea)
+  - [Main Features](#main-features)
+    - [Track the location of the user](#track-the-location-of-the-user)
+    - [Detect if the user is in danger](#detect-if-the-user-is-in-danger)
+    - [In case of danger](#in-case-of-danger)
+    - [Arriving](#arriving)
+    - [User information management](#user-information-management)
+    - [Guidelines](#guidelines)
+    - [Optional features](#optional-features)
+  - [Technology stack](#technology-stack)
+  - [Design](#design)
+  - [Other](#other)
+
+<!-- /TOC -->
+
 ## Idea
 
 Beacon is an app helping people to get home safe. It is a location based app which tracks the location of the user and takes action in case of danger.
