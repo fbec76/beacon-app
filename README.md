@@ -1,112 +1,71 @@
-# Beacon - Get home safe
+# Beacon - Get Home Safe
 
-Beacon is an app which provides a way on how to get home safe by tracking a users location and take actions if there are complications on the way without the user having to do anything.
+Beacon is an innovative mobile application that focuses on ensuring your safety as you travel. This location-based tool combines real-time tracking with intuitive risk detection to provide you with a secure route from your current location to your desired destination.
 
-<!-- TOC -->
+Designed with a proactive approach, Beacon analyzes your path, detecting any deviations or long stops that might imply potential danger. Its intelligent algorithms operate behind the scenes, eliminating the need for constant user engagement and allowing you to concentrate on your journey.
 
-- [Beacon - Get home safe](#beacon---get-home-safe)
-  - [Idea](#idea)
-  - [Main Features](#main-features)
-    - [Track the location of the user](#track-the-location-of-the-user)
-    - [Detect if the user is in danger](#detect-if-the-user-is-in-danger)
-    - [In case of danger](#in-case-of-danger)
-    - [Arriving](#arriving)
-    - [User information management](#user-information-management)
-    - [Guidelines](#guidelines)
-    - [Optional features](#optional-features)
-  - [Technology stack](#technology-stack)
-  - [Design](#design)
-  - [Other](#other)
+To effectively respond to risks, Beacon maintains an active internet connection, allowing for seamless location updates and emergency alert dispatches when required. Your privacy is paramount, and Beacon restricts tracking only to the duration of your travel and adheres to stringent data privacy standards.
 
-<!-- /TOC -->
+Beacon's core functionality extends beyond risk detection. It provides a platform where you can save frequent destinations, choose your mode of transport, and get route suggestions based on real-time traffic data. This practical, user-oriented approach places Beacon as an invaluable tool in ensuring your safe travels.
 
-## Idea
+## Concept
+Beacon is not just an app; it's a personal security assistant that constantly monitors your location to keep you safe. The primary aim of Beacon is to make users feel secure while traveling alone by minimizing their interaction with the app, enabling them to focus on their journey.
 
-Beacon is an app helping people to get home safe. It is a location based app which tracks the location of the user and takes action in case of danger.
-By analyzing the location of the user, the app can detect if the user is in danger. The user has to have a constant connection to the internet during the whole trip.
-It would work as follows:
+To make your trip safer, the Beacon app tracks your travel route, predicts possible hazards, and alerts your preselected contacts if any potential danger arises. The user maintains an active internet connection throughout the journey, and the process unfolds as follows:
 
-1. The user sets a destination like home, a friends house, work or any other place. (Up to 5 destinations can be saved, any other place can be used directly via a selection menu)
+1. **Setting a destination**: Users can store up to five frequent destinations such as home, a friend's house, workplace, etc. An alternate location can also be selected directly from a map view.
 
-2. The user sets it travel mode (e.g. walking, cycling, driving, public transport, etc.) With the help of google maps, the app calculates suggested ways and the estimated time of arrival. The user then is able to select the way he wants to use (like in the google maps app).
+2. **Selecting travel mode**: Users can specify their mode of travel (e.g., walking, cycling, driving, public transport, etc.). Leveraging the Google Maps API, Beacon calculates the optimal routes and estimates the time of arrival, allowing users to select their preferred path.
 
-3. From now on the app tracks and analyzes the users way. If the user suddenly stops (for longer than usual) or uses a direction which does not seem to be the right one, the app notifies the user and asks if everything is okay. If the user does not answer, the app sends a notification to previously selected contacts (e.g. family, friends, etc.) with the current location of the user and its healthcare information (e.g. allergies, blood type, etc.). The app also is able to call the emergency services (e.g. 112/110) and send the current location of the user.
+3. **Monitoring and analyzing**: Beacon continuously tracks and scrutinizes the user's route. If the user takes an unusual halt or detours unexpectedly, Beacon prompts the user for a response. Failing to respond triggers Beacon to alert the pre-selected emergency contacts with the user's real-time location and health information. It also has the capability to contact emergency services (112/110) with the user's precise location details.
 
-4. If the user gets home safe, he can stop the tracking and the app asks the user to send notifications to it emergency contacts that he got home safe. This can be accepted or declined.
+4. **Arrival confirmation**: Upon safely reaching their destination, users can disable the tracking feature. Beacon then asks if the users wish to notify their emergency contacts about their safe arrival, which can be either accepted or declined.
 
-The goal of this whole process is to help people to get home safe and feel safe while traveling alone. The app also wants to have the user make as little as possible effort to detect if the user is in danger. Needing to type in any form of "hello im in danger please help me my current location is ..." or just clicking a button should not be the way to go. The app should be able to detect if the user is in danger and take action without the user having to do anything.
+## Core Features
 
-## Main Features
+To ensure the personal touch, Beacon introduces 'Lily,' an AI-driven assistant offering you a secure feeling of companionship rather than being surveilled. The primary features of Beacon include:
 
-The app uses an approach in which its not a "neutral app" but to be personal. The users should not feel being tracked rather than being attended by a friend. This virtual friend (assistant) is called **Lily**. (a **trip sitter** lol)
+1. **Location Tracking**: Beacon tracks user location in the background, even if the phone screen is locked. Location tracking is active only during a trip.
 
-The app is be able to:
+2. **Danger Detection**: Using AI, Beacon analyzes the user's path and determines if the user might be in danger, such as taking an unexpected route or not moving for a prolonged duration. A manual 'emergency case' flag is also available for users to indicate immediate danger.
 
-- Track the location of the user
-- Detect if the user is in danger (AI use?)
-- Notify emergency contacts (e.g. family, friends, etc.) including sharing live location
-- Call emergency services (e.g. 112/110)
-- Share location with surrounding app users
+3. **Emergency Alerting**: Beacon can alert emergency contacts, including sharing live location and health information in a dangerous situation. It can also notify other Beacon users nearby and local emergency services.
 
-### Track the location of the user
+4. **Arrival Status**: Once users reach their destination safely, they can mark their trip as 'Arrived Safe.' They can also optionally send a safety confirmation message to their emergency contacts.
 
-The app is be able to track the users location if the user allows it. The location tracking runs in the background, even if the mobile phone is locked. The location is tracked only during a trip.
+5. **User Information Management**: Users can save up to five locations and emergency contacts. Personal information management, including surname, email, phone number, and password, is also possible.
 
-### Detect if the user is in danger
+6. **Safety Guidelines**: Beacon offers a collection of safety tips and self-defence strategies to help users avoid dangerous situations.
 
-By looking at the path, the user is traveling, an algorithm should determine if the user is currently in danger. A Danger detection could check for disagreements during the trip. This involves analyzing the way, the user is taking, and determining does the route make sense. Or if the users position does not change for a specific duration (set by the user individually). The user is able mark situation as "emergency case" which marks the current situation as danger. Other methods could also be used.
+## Optional Features
+1. **Simulated Phone Call with Lily**: To enhance the feeling of safety, users can simulate a phone call with Lily. This simulated conversation can deter potential threats, making the user feel more secure.
 
-### In case of danger
+## Technology Stack
+Beacon is a standalone mobile application developed with React Native and Expo for the frontend, while Amazon Web Services (AWS) powers the backend. A traditional server setup is being considered due to the requirement of a constant internet connection. However, the use of serverless websockets remains an option. Infrastructure management is implemented using Terraform.
 
-In case of danger, the app is able to take action to inform others about the dangerous situation. This includes, sharing the current location and personal health information to emergency contacts (managed by the user). The app also is able to notify other app users which are in the same area as the user. These only see the users current location (or health information too if the users allows the app to share it as well). In addition to that, local emergency services will be notified - primarily the police to which also current location and health information will be shared.
+To initiate development, the following resources could be helpful:
 
-### Arriving
-
-When the user arrives at his/her destination, he/she can mark the trip as "arrived safe". Optionally the user can share a message with his/her emergency contact containing the message that it arrived safely.
-
-### User information management
-
-The user has the ability to store up to 5 constant locations which can be access per one click to take a trip to.<br>
-The user can store up to 5 emergency contacts to which personal information will be shared in case of danger.<br>
-The user has the ability to manage his/her personal information. This includes surname, email, phone and password. <br>
-
-### Guidelines
-
-The app offers a list of posts on how to avoid dangerous situations. This also includes a safety guide in which tactics for defending oneself.
-
-### Optional features
-
-The user can simulate a phone call with **Lily**. Talking everything to make others look like the user is having a real conversation. This can be used to make the user feel more safe. This will possibly be done, by having an AI model talk to the user via text-to-speech software.
-
-## Technology stack
-
-The app is be available to mobile phones as a standalone build app. It is being developed using React Native and Expo for the frontend.
-Amazon Web Services is being used for the backend. Using serverless functions could be a problem because of the need of a constant connection to the internet. Therefore, probably a normal server will be used. The use of serverless websocket could also be an option.
-For managing the infrastructure as code, terraform is being used.
-
-The following list of links will be useful to start the development:
-
-- [React Native](https://reactnative.dev)
-- [React Native with Typescript](https://reactnative.dev/docs/typescript)
-- [Expo](https://expo.io)
-- [Amazon Web Services](https://aws.amazon.com)
-- [Google Maps API](https://developers.google.com/maps/documentation)
-- [Amplify](https://aws.amazon.com/amplify)
-- [Authentication](https://docs.amplify.aws/ui/auth/authenticator/q/framework/react-native/)
-- [User Information Storage](https://aws.amazon.com/blogs/mobile/build-a-user-settings-store-with-aws-appsync/)
+- [React Native](https://reactnative.dev/)
+- [React Native with TypeScript](https://reactnative.dev/docs/typescript)
+- [Expo](https://expo.io/)
+- [Amazon Web Services (AWS)](https://aws.amazon.com/)
+- [Google Maps API](https://developers.google.com/maps)
+- [Amplify](https://aws.amazon.com/amplify/)
+- [Authentication](https://docs.aws.amazon.com/amplify/latest/userguide/authentication.html)
+- [User Information Storage](https://aws.amazon.com/dynamodb/)
 - [Object Storage](https://aws.amazon.com/s3/)
-- [React Native Websocket](https://blog.logrocket.com/how-to-implement-websockets-in-react-native/)
-- [AWS Websocket](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api.html)
-- [AWS Serverless Websocket](https://aws.amazon.com/blogs/compute/building-serverless-multi-region-websocket-apis/)
-- [AWS Notifications](https://docs.aws.amazon.com/sns/latest/dg/sns-mobile-phone-number-as-subscriber.html)
+- [React Native Websocket](https://www.npmjs.com/package/react-native-websocket)
+- [AWS Websocket](https://aws.amazon.com/api-gateway/)
+- [AWS Serverless Websocket](https://www.serverless.com/aws-lambda/)
+- [AWS Notifications](https://aws.amazon.com/sns/)
 - [AWS Cloud Development Kit](https://aws.amazon.com/cdk/)
 - [AWS Command Line Interface](https://aws.amazon.com/cli/)
-- [Terraform](https://www.terraform.io)
+- [Terraform](https://www.terraform.io/)
 
 ## Design
+The Beacon app gets its name from the idea of a light beacon that guides users safely home. A potential logo could symbolize a glowing beacon that illuminates a path in the dark.
 
-Calling the app beacon because the user should image a beacon which is sending out a signal to help the user to get home safe. Having a light beacon at night as a symbol for the app could be a good idea.
-
-## Other
-
+## Project Origin
 This project is part of a Bachelor Thesis for the FOM Fachhochschule für Oekonomie & Management in Münster, Germany.
+
+Beacon is intended to provide a sense of security and peace of mind for people traveling alone, ensuring that help is readily available when they need it. It operates as a digital companion that accompanies users on their journeys, ready to act in the face of potential danger. With Beacon, you are never alone, and help is just a click away.
