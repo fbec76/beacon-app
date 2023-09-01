@@ -66,6 +66,5 @@ To initiate development, the following resources could be helpful:
 The Beacon app gets its name from the idea of a light beacon that guides users safely home. A potential logo could symbolize a glowing beacon that illuminates a path in the dark.
 
 ## Project Origin
-This project is part of a Bachelor Thesis for the FOM Fachhochschule für Oekonomie & Management in Münster, Germany.
 
 Beacon is intended to provide a sense of security and peace of mind for people traveling alone, ensuring that help is readily available when they need it. It operates as a digital companion that accompanies users on their journeys, ready to act in the face of potential danger. With Beacon, you are never alone, and help is just a click away.
